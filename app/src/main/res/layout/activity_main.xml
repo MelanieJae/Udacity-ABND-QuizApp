@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.melanieh.quizapp.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/scroll_child"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/quizheading"
+            style="@style/QuizHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quiz_heading" />
+
+        <TextView
+            android:id="@+id/q1text"
+            style="@style/QuestionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/quizheading"
+            android:text="@string/q1text" />
+
+        <RadioGroup
+            android:id="@+id/q1radiobtns"
+            style="@style/RadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/q1text">
+
+            <RadioButton
+                android:id="@+id/q1ans1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="recordChoiceQ1"
+                android:text="@string/q1ans1label" />
+
+            <RadioButton
+                android:id="@+id/q1ans2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="recordChoiceQ1"
+                android:text="@string/q1ans2label" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/q2text"
+            style="@style/QuestionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/q1radiobtns"
+            android:text="@string/q2text" />
+
+        <RadioGroup
+            android:id="@+id/q2radiobtns"
+            style="@style/RadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/q2text">
+
+            <RadioButton
+                android:id="@+id/q2ans1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="recordChoiceQ2"
+                android:text="@string/q2ans1label" />
+
+            <RadioButton
+                android:id="@+id/q2ans2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="recordChoiceQ2"
+                android:text="@string/q2ans2label" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/q3text"
+            style="@style/QuestionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/q2radiobtns"
+            android:text="@string/q3text" />
+
+        <RadioGroup
+            android:id="@+id/q3radiobtns"
+            style="@style/RadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/q3text">
+
+            <RadioButton
+                android:id="@+id/q3ans1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="recordChoiceQ3"
+                android:text="@string/q3ans1label" />
+
+            <RadioButton
+                android:id="@+id/q3ans2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="recordChoiceQ3"
+                android:text="@string/q3ans2label" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/q4text"
+            style="@style/QuestionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/q3radiobtns"
+            android:text="@string/q4text" />
+
+        <LinearLayout
+            android:id="@+id/q4checkboxes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/q4text"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/q4ans1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/q4ans1label" />
+
+            <CheckBox
+                android:id="@+id/q4ans2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/q4ans2label" />
+
+            <CheckBox
+                android:id="@+id/q4ans3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/q4ans3label" />
+
+            <CheckBox
+                android:id="@+id/q4ans4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/q4ans4label" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/q5text"
+            style="@style/QuestionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/q4checkboxes"
+            android:text="@string/q5text" />
+
+        <RadioGroup
+            android:id="@+id/q5radiobtns"
+            style="@style/RadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/q5text">
+
+            <RadioButton
+                android:id="@+id/q5ans1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="recordChoiceQ5"
+                android:text="@string/q5ans1label" />
+
+            <RadioButton
+                android:id="@+id/q5ans2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="recordChoiceQ5"
+                android:text="@string/q5ans2label" />
+
+            <RadioButton
+                android:id="@+id/q5ans3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="recordChoiceQ5"
+                android:text="@string/q5ans3label" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/q6text"
+            style="@style/QuestionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/q5radiobtns"
+            android:text="@string/q6text" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/q6ans"
+            android:layout_below="@id/q6text"
+            android:inputType="text"
+            android:clickable="true" />
+
+        <Button
+            android:id="@+id/get_score_btn"
+            style="@style/QuestionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/q6ans"
+            android:onClick="displayFinalScore"
+            android:text="@string/get_score_btn" />
+
+
+    </RelativeLayout>
+</ScrollView>

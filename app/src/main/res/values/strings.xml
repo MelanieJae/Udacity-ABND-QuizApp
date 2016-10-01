@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Fun Facts Quiz: New Zealand</string>
+    <string name="quiz_heading">Welcome to the New Zealand Fun Facts Quiz!"</string>
+    <string name="q1text">1. What does New Zealand have more of: sheep or people?</string>
+    <string name="q2text">2. What is the name of New Zealand\'s rugby team?</string>
+    <string name="q3text">3. Which side of trees does moss grow on in New Zealand?</string>
+    <string name="q4text">4. Which of the following is a town in New Zealand?</string>
+    <string name="q5text">5. What is the southernmost city in New Zealand?</string>
+    <string name="q6text">6. What is the official bird of New Zealand?</string>
+
+    <string name="q1ans1label">sheep</string>
+    <string name="q1ans2label">people</string>
+    <string name="q2ans1label">Wallabies</string>
+    <string name="q2ans2label">All Blacks</string>
+    <string name="q3ans1label">north</string>
+    <string name="q3ans2label">south</string>
+    <string name="q4ans1label">Te Anau</string>
+    <string name="q4ans2label">Bali</string>
+    <string name="q4ans3label">Hobart</string>
+    <string name="q4ans4label">Wollongong</string>
+    <string name="q5ans1label">Auckland</string>
+    <string name="q5ans2label">Christchurch</string>
+    <string name="q5ans3label">Invercargill</string>
+
+    <string name="get_score_btn">Get your score</string>
+
+</resources>
