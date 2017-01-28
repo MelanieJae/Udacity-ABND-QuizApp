@@ -204,14 +204,14 @@
             android:clickable="true" />
 
         <Button
-            android:id="@+id/get_score_btn"
+            android:id="@+id/toggle_btn"
+            android:onClick="displayFinalScore"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@android:color/white"
             style="@style/QuestionText"
+            android:text="@string/get_score"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/q6ans"
-            android:onClick="displayFinalScore"
-            android:text="@string/get_score_btn" />
-
-
+            android:layout_below="@id/q6ans"/>
     </RelativeLayout>
 </ScrollView>

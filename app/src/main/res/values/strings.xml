@@ -23,5 +23,6 @@
     <string name="q5ans3label">Invercargill</string>
 
     <string name="get_score_btn">Get your score</string>
-
+    <string name="get_score">Get your score</string>
+    <string name="take_quiz_again">Take Quiz Again</string>
 </resources>
